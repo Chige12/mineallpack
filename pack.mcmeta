@@ -1,6 +1,7 @@
 {
     "pack": {
-        "description": "Tree capitator Datapack. Made by Hielke",
+        "description": "MineAll Datapack",
+        "__based_on": "Tree capitator Datapack. Made by Hielke",
         "pack_format": 1
     }
 }
