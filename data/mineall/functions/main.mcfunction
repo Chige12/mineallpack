@@ -15,9 +15,9 @@ execute at @e[type=area_effect_cloud,tag=MA_AECQO,nbt={Age:1}] run function mine
 execute at @e[type=area_effect_cloud,tag=MA_AECQO_SILK,nbt={Age:1}] run function mineall:detect/nether_quartz_ore
 execute at @e[type=area_effect_cloud,tag=MA_AECRO,nbt={Age:1}] run function mineall:detect/redstone
 execute at @e[type=area_effect_cloud,tag=MA_AECRO_SILK,nbt={Age:1}] run function mineall:detect/redstone_ore
-#execute at @e[type=area_effect_cloud,tag=MA_AECI,nbt={Age:1}] run function mineall:detect/ice
-#execute at @e[type=area_effect_cloud,tag=MA_AECPI,nbt={Age:1}] run function mineall:detect/packed_ice
-#execute at @e[type=area_effect_cloud,tag=MA_AECBI,nbt={Age:1}] run function mineall:detect/blue_ice
+execute at @e[type=area_effect_cloud,tag=MA_AECI,nbt={Age:1}] run function mineall:detect/ice
+execute at @e[type=area_effect_cloud,tag=MA_AECPI,nbt={Age:1}] run function mineall:detect/packed_ice
+execute at @e[type=area_effect_cloud,tag=MA_AECBI,nbt={Age:1}] run function mineall:detect/blue_ice
 
 scoreboard players reset @a MA_BO
 scoreboard players reset @a MA_UPA

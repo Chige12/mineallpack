@@ -16,16 +16,6 @@ scoreboard objectives add MA_UIPA minecraft.used:minecraft.iron_pickaxe
 scoreboard objectives add MA_UGPA minecraft.used:minecraft.golden_pickaxe
 scoreboard objectives add MA_UDPA minecraft.used:minecraft.diamond_pickaxe
 
-scoreboard objectives add MA_BCO_SILK dummy
-scoreboard objectives add MA_BDO_SILK dummy
-scoreboard objectives add MA_BEO_SILK dummy
-scoreboard objectives add MA_BLO_SILK dummy
-scoreboard objectives add MA_BQO_SILK dummy
-scoreboard objectives add MA_BRO_SILK dummy
-scoreboard objectives add MA_BI_SILK dummy
-scoreboard objectives add MA_BPI_SILK dummy
-scoreboard objectives add MA_BBI_SILK dummy
-
 scoreboard objectives add MA_SNEAK minecraft.custom:minecraft.sneak_time
 
 scoreboard objectives add MA_BO dummy
