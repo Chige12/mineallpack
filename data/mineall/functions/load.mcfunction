@@ -22,6 +22,9 @@ scoreboard objectives add MA_BEO_SILK dummy
 scoreboard objectives add MA_BLO_SILK dummy
 scoreboard objectives add MA_BQO_SILK dummy
 scoreboard objectives add MA_BRO_SILK dummy
+scoreboard objectives add MA_BI_SILK dummy
+scoreboard objectives add MA_BPI_SILK dummy
+scoreboard objectives add MA_BBI_SILK dummy
 
 scoreboard objectives add MA_SNEAK minecraft.custom:minecraft.sneak_time
 

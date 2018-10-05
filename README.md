@@ -12,9 +12,11 @@ mineall datapack (based on TreeCaptator datapack)
 * ダイヤモンド鉱石
 * エメラルド鉱石
 * ネザークォーツ鉱石
-* 氷
-* 氷塊
-* 青氷
+* ~氷~
+* ~氷塊~
+* ~青氷~
+
+※氷関連はうまく動かないので無効化中
 
 ## インストール方法
 1. このページ右上の「Clone or Download」から「Download ZIP」でZIPファイルをダウンロード
