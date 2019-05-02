@@ -1,7 +1,10 @@
-execute if block ~ ~ ~ minecraft:packed_ice run function mineall:break/base_silk
-execute if block ~1 ~ ~ minecraft:packed_ice run function mineall:break/x1_silk
-execute if block ~-1 ~ ~ minecraft:packed_ice run function mineall:break/x-1_silk
-execute if block ~ ~ ~1 minecraft:packed_ice run function mineall:break/z1_silk
-execute if block ~ ~ ~-1 minecraft:packed_ice run function mineall:break/z-1_silk
-execute if block ~ ~-1 ~ minecraft:packed_ice run function mineall:break/y-1_silk
-execute if block ~ ~1 ~ minecraft:packed_ice run function mineall:break/y1_silk
+execute if block ~ ~ ~ minecraft:packed_ice as @p[scores={MA_BPI=1,MA_UPA=1}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:packed_ice",Count:1b}}
+execute if block ~ ~ ~ minecraft:packed_ice as @p[scores={MA_BPI=1,MA_UPA=1}] run playsound block.glass.break block @s
+execute if block ~ ~ ~ minecraft:packed_ice as @p[scores={MA_BPI=1,MA_UPA=1}] run setblock ~ ~ ~ air replace
+
+execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:packed_ice run function mineall:detect/packed_ice
+execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:packed_ice run function mineall:detect/packed_ice
+execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:packed_ice run function mineall:detect/packed_ice
+execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:packed_ice run function mineall:detect/packed_ice
+execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:packed_ice run function mineall:detect/packed_ice
+execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:packed_ice run function mineall:detect/packed_ice

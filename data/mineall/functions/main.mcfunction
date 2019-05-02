@@ -1,24 +1,59 @@
-function mineall:objectives
-execute at @a[scores={MA_BO=1,MA_UPA=1,MA_SNEAK=0}] run function mineall:firstblock
+scoreboard players set @a[scores={MA_UWPA=1}] MA_UPA 1
+scoreboard players set @a[scores={MA_USPA=1}] MA_UPA 1
+scoreboard players set @a[scores={MA_UIPA=1}] MA_UPA 1
+scoreboard players set @a[scores={MA_UGPA=1}] MA_UPA 1
+scoreboard players set @a[scores={MA_UDPA=1}] MA_UPA 1
+scoreboard players reset @a MA_UWPA
+scoreboard players reset @a MA_USPA
+scoreboard players reset @a MA_UIPA
+scoreboard players reset @a MA_UGPA
+scoreboard players reset @a MA_UDPA
 
-execute at @e[type=area_effect_cloud,tag=MA_AECCO,nbt={Age:1}] run function mineall:detect/coal
-execute at @e[type=area_effect_cloud,tag=MA_AECCO_SILK,nbt={Age:1}] run function mineall:detect/coal_ore
-execute at @e[type=area_effect_cloud,tag=MA_AECDO,nbt={Age:1}] run function mineall:detect/diamond
-execute at @e[type=area_effect_cloud,tag=MA_AECDO_SILK,nbt={Age:1}] run function mineall:detect/diamond_ore
-execute at @e[type=area_effect_cloud,tag=MA_AECEO,nbt={Age:1}] run function mineall:detect/emerald
-execute at @e[type=area_effect_cloud,tag=MA_AECEO_SILK,nbt={Age:1}] run function mineall:detect/emerald_ore
-execute at @e[type=area_effect_cloud,tag=MA_AECGO,nbt={Age:1}] run function mineall:detect/gold_ore
-execute at @e[type=area_effect_cloud,tag=MA_AECIO,nbt={Age:1}] run function mineall:detect/iron_ore
-execute at @e[type=area_effect_cloud,tag=MA_AECLO,nbt={Age:1}] run function mineall:detect/lapis_lazuli
-execute at @e[type=area_effect_cloud,tag=MA_AECLO_SILK,nbt={Age:1}] run function mineall:detect/lapis_ore
-execute at @e[type=area_effect_cloud,tag=MA_AECQO,nbt={Age:1}] run function mineall:detect/quartz
-execute at @e[type=area_effect_cloud,tag=MA_AECQO_SILK,nbt={Age:1}] run function mineall:detect/nether_quartz_ore
-execute at @e[type=area_effect_cloud,tag=MA_AECRO,nbt={Age:1}] run function mineall:detect/redstone
-execute at @e[type=area_effect_cloud,tag=MA_AECRO_SILK,nbt={Age:1}] run function mineall:detect/redstone_ore
-execute at @e[type=area_effect_cloud,tag=MA_AECI,nbt={Age:1}] run function mineall:detect/ice
-execute at @e[type=area_effect_cloud,tag=MA_AECPI,nbt={Age:1}] run function mineall:detect/packed_ice
-execute at @e[type=area_effect_cloud,tag=MA_AECBI,nbt={Age:1}] run function mineall:detect/blue_ice
+scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] MA_SILK 1
+scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:fortune",lvl:1s}]}}}] MA_FORTUNE 1
+scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:fortune",lvl:2s}]}}}] MA_FORTUNE 2
+scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:fortune",lvl:3s}]}}}] MA_FORTUNE 3
 
-scoreboard players reset @a MA_BO
+execute at @a[scores={MA_BCO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:coal"},Age:0s},distance=..10] run function mineall:detect/coal
+execute at @a[scores={MA_BCO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:coal_ore"},Age:0s},distance=..10] run function mineall:detect/coal
+scoreboard players reset @a MA_BCO
+
+execute at @a[scores={MA_BDO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:diamond"},Age:0s},distance=..10] run function mineall:detect/diamond
+execute at @a[scores={MA_BDO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:diamond_ore"},Age:0s},distance=..10] run function mineall:detect/diamond
+scoreboard players reset @a MA_BDO
+
+execute at @a[scores={MA_BEO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:emerald"},Age:0s},distance=..10] run function mineall:detect/emerald
+execute at @a[scores={MA_BEO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:emerald_ore"},Age:0s},distance=..10] run function mineall:detect/emerald
+scoreboard players reset @a MA_BEO
+
+execute at @a[scores={MA_BGO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gold_ore"},Age:0s},distance=..10] run function mineall:detect/gold
+scoreboard players reset @a MA_BGO
+
+execute at @a[scores={MA_BIO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:iron_ore"},Age:0s},distance=..10] run function mineall:detect/iron
+scoreboard players reset @a MA_BIO
+
+execute at @a[scores={MA_BLO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:lapis_lazuli"},Age:0s},distance=..10] run function mineall:detect/lapis_lazuli
+execute at @a[scores={MA_BLO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:lapis_ore"},Age:0s},distance=..10] run function mineall:detect/lapis_lazuli
+scoreboard players reset @a MA_BLO
+
+execute at @a[scores={MA_BQO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:quartz"},Age:0s},distance=..10] run function mineall:detect/quartz
+execute at @a[scores={MA_BQO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:nether_quartz_ore"},Age:0s},distance=..10] run function mineall:detect/quartz
+scoreboard players reset @a MA_BQO
+
+execute at @a[scores={MA_BRO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:redstone"},Age:0s},distance=..10] run function mineall:detect/redstone
+execute at @a[scores={MA_BRO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:redstone_ore"},Age:0s},distance=..10] run function mineall:detect/redstone
+scoreboard players reset @a MA_BRO
+
+execute at @a[scores={MA_BI=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:ice"},Age:0s},distance=..10] run function mineall:detect/ice
+scoreboard players reset @a MA_BI
+
+execute at @a[scores={MA_BPI=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:packed_ice"},Age:0s},distance=..10] run function mineall:detect/packed_ice
+scoreboard players reset @a MA_BPI
+
+execute at @a[scores={MA_BBI=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:blue_ice"},Age:0s},distance=..10] run function mineall:detect/blue_ice
+scoreboard players reset @a MA_BBI
+
+scoreboard players set @a MA_SILK 0
+scoreboard players set @a MA_FORTUNE 0
 scoreboard players reset @a MA_UPA
 scoreboard players set @a MA_SNEAK 0

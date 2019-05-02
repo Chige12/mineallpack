@@ -18,6 +18,14 @@ scoreboard objectives add MA_UDPA minecraft.used:minecraft.diamond_pickaxe
 
 scoreboard objectives add MA_SNEAK minecraft.custom:minecraft.sneak_time
 
-scoreboard objectives add MA_BO dummy
+scoreboard objectives add MA_SILK dummy
+scoreboard objectives add MA_FORTUNE dummy
+
+scoreboard objectives add MA_RANDOM_MIN dummy
+scoreboard objectives add MA_RANDOM_MAX dummy
+scoreboard objectives add MA_RANDOM dummy
+
+scoreboard objectives add MA_BASE_COUNT dummy
+
 scoreboard objectives add MA_UPA dummy
-tellraw @a [{"text":"[Datapack]"},{"text":" MineAllPack has been enabled","color":"green"}]
+tellraw @a [{"text":"[Datapack]"},{"text":" MineAllPack has been installed","color":"green"}]

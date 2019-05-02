@@ -18,6 +18,14 @@ scoreboard objectives remove MA_UDPA
 
 scoreboard objectives remove MA_SNEAK
 
-scoreboard objectives remove MA_BO
+scoreboard objectives remove MA_SILK
+scoreboard objectives remove MA_FORTUNE
+
+scoreboard objectives remove MA_RANDOM_MIN
+scoreboard objectives remove MA_RANDOM_MAX
+scoreboard objectives remove MA_RANDOM
+
+scoreboard objectives remove MA_BASE_COUNT
+
 scoreboard objectives remove MA_UPA
 tellraw @a [{"text":"[Datapack]"},{"text":" MineAllPack is uninstalled","color":"green"}]
