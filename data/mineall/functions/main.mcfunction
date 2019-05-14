@@ -9,10 +9,14 @@ scoreboard players reset @a MA_UIPA
 scoreboard players reset @a MA_UGPA
 scoreboard players reset @a MA_UDPA
 
+scoreboard players enable @a MineAllPack
+
 scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] MA_SILK 1
 scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:fortune",lvl:1s}]}}}] MA_FORTUNE 1
 scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:fortune",lvl:2s}]}}}] MA_FORTUNE 2
 scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:fortune",lvl:3s}]}}}] MA_FORTUNE 3
+
+execute as @a[scores={MineAllPack=1..}] at @s run function mineall:option/main
 
 execute at @a[scores={MA_BCO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:coal"},Age:0s},distance=..10] run function mineall:detect/coal
 execute at @a[scores={MA_BCO=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:coal_ore"},Age:0s},distance=..10] run function mineall:detect/coal

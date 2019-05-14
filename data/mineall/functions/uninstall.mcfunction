@@ -28,4 +28,33 @@ scoreboard objectives remove MA_RANDOM
 scoreboard objectives remove MA_BASE_COUNT
 
 scoreboard objectives remove MA_UPA
+
+#Option scores
+scoreboard objectives remove MA_AutoCollect
+scoreboard objectives remove MA_DestoryUnder
+scoreboard objectives remove MA_DropGather
+scoreboard objectives remove MA_Durability
+
+scoreboard objectives remove MA_coal_ore
+scoreboard objectives remove MA_diamond_ore
+scoreboard objectives remove MA_emerald_ore
+scoreboard objectives remove MA_gold_ore
+scoreboard objectives remove MA_iron_ore
+scoreboard objectives remove MA_lapis_ore
+scoreboard objectives remove MA_quartz_ore
+scoreboard objectives remove MA_redstone_ore
+scoreboard objectives remove MA_ice
+scoreboard objectives remove MA_packed_ice
+scoreboard objectives remove MA_blue_ice
+scoreboard objectives remove MA_glowstone
+scoreboard objectives remove MA_obsidian
+
+scoreboard objectives remove MA_diamond_paxe
+scoreboard objectives remove MA_iron_paxe
+scoreboard objectives remove MA_golden_paxe
+scoreboard objectives remove MA_stone_paxe
+scoreboard objectives remove MA_wooden_paxe
+
+scoreboard objectives remove MineAllPack
+
 tellraw @a [{"text":"[Datapack]"},{"text":" MineAllPack is uninstalled","color":"green"}]

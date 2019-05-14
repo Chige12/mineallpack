@@ -28,4 +28,59 @@ scoreboard objectives add MA_RANDOM dummy
 scoreboard objectives add MA_BASE_COUNT dummy
 
 scoreboard objectives add MA_UPA dummy
+
+#Option scores
+scoreboard objectives add MA_AutoCollect dummy
+scoreboard objectives add MA_DestoryUnder dummy
+scoreboard objectives add MA_DropGather dummy
+scoreboard objectives add MA_Durability dummy
+
+scoreboard objectives add MA_coal_ore dummy
+scoreboard objectives add MA_diamond_ore dummy
+scoreboard objectives add MA_emerald_ore dummy
+scoreboard objectives add MA_gold_ore dummy
+scoreboard objectives add MA_iron_ore dummy
+scoreboard objectives add MA_lapis_ore dummy
+scoreboard objectives add MA_quartz_ore dummy
+scoreboard objectives add MA_redstone_ore dummy
+scoreboard objectives add MA_ice dummy
+scoreboard objectives add MA_packed_ice dummy
+scoreboard objectives add MA_blue_ice dummy
+scoreboard objectives add MA_glowstone dummy
+scoreboard objectives add MA_obsidian dummy
+
+scoreboard objectives add MA_diamond_paxe dummy
+scoreboard objectives add MA_iron_paxe dummy
+scoreboard objectives add MA_golden_paxe dummy
+scoreboard objectives add MA_stone_paxe dummy
+scoreboard objectives add MA_wooden_paxe dummy
+
+#Option defaults (only if not set)
+execute as @a unless score @s MA_AutoCollect matches 0.. unless score @s MA_AutoCollect matches ..0 run scoreboard players set @s MA_AutoCollect 0
+execute as @a unless score @s MA_DestoryUnder matches 0.. unless score @s MA_DestoryUnder matches ..0 run scoreboard players set @s MA_DestoryUnder 1
+execute as @a unless score @s MA_DropGather matches 0.. unless score @s MA_DropGather matches ..0 run scoreboard players set @s MA_DropGather 0
+execute as @a unless score @s MA_Durability matches 0.. unless score @s MA_Durability matches ..0 run scoreboard players set @s MA_Durability 0
+
+execute as @a unless score @s MA_coal_ore matches 0.. unless score @s MA_coal_ore matches ..0 run scoreboard players set @s MA_coal_ore 1
+execute as @a unless score @s MA_diamond_ore matches 0.. unless score @s MA_diamond_ore matches ..0 run scoreboard players set @s MA_diamond_ore 1
+execute as @a unless score @s MA_emerald_ore matches 0.. unless score @s MA_emerald_ore matches ..0 run scoreboard players set @s MA_emerald_ore 1
+execute as @a unless score @s MA_gold_ore matches 0.. unless score @s MA_gold_ore matches ..0 run scoreboard players set @s MA_gold_ore 1
+execute as @a unless score @s MA_iron_ore matches 0.. unless score @s MA_iron_ore matches ..0 run scoreboard players set @s MA_iron_ore 1
+execute as @a unless score @s MA_lapis_ore matches 0.. unless score @s MA_lapis_ore matches ..0 run scoreboard players set @s MA_lapis_ore 1
+execute as @a unless score @s MA_quartz_ore matches 0.. unless score @s MA_quartz_ore matches ..0 run scoreboard players set @s MA_quartz_ore 1
+execute as @a unless score @s MA_redstone_ore matches 0.. unless score @s MA_redstone_ore matches ..0 run scoreboard players set @s MA_redstone_ore 1
+execute as @a unless score @s MA_ice matches 0.. unless score @s MA_ice matches ..0 run scoreboard players set @s MA_ice 1
+execute as @a unless score @s MA_packed_ice matches 0.. unless score @s MA_packed_ice matches ..0 run scoreboard players set @s MA_packed_ice 1
+execute as @a unless score @s MA_blue_ice matches 0.. unless score @s MA_blue_ice matches ..0 run scoreboard players set @s MA_blue_ice 1
+execute as @a unless score @s MA_glowstone matches 0.. unless score @s MA_glowstone matches ..0 run scoreboard players set @s MA_glowstone 1
+execute as @a unless score @s MA_obsidian matches 0.. unless score @s MA_obsidian matches ..0 run scoreboard players set @s MA_obsidian 1
+
+execute as @a unless score @s MA_diamond_paxe matches 0.. unless score @s MA_diamond_paxe matches ..0 run scoreboard players set @s MA_diamond_paxe 1
+execute as @a unless score @s MA_iron_paxe matches 0.. unless score @s MA_iron_paxe matches ..0 run scoreboard players set @s MA_iron_paxe 1
+execute as @a unless score @s MA_golden_paxe matches 0.. unless score @s MA_golden_paxe matches ..0 run scoreboard players set @s MA_golden_paxe 1
+execute as @a unless score @s MA_stone_paxe matches 0.. unless score @s MA_stone_paxe matches ..0 run scoreboard players set @s MA_stone_paxe 1
+execute as @a unless score @s MA_wooden_paxe matches 0.. unless score @s MA_wooden_paxe matches ..0 run scoreboard players set @s MA_wooden_paxe 1
+
+scoreboard objectives add MineAllPack trigger
+
 tellraw @a [{"text":"[Datapack]"},{"text":" MineAllPack has been installed","color":"green"}]
