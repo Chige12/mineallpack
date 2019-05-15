@@ -9,6 +9,8 @@ scoreboard objectives remove MA_BRO
 scoreboard objectives remove MA_BI
 scoreboard objectives remove MA_BPI
 scoreboard objectives remove MA_BBI
+scoreboard objectives remove MA_BGS
+scoreboard objectives remove MA_BOB
 
 scoreboard objectives remove MA_UWPA
 scoreboard objectives remove MA_USPA

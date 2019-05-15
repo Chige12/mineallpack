@@ -57,6 +57,13 @@ scoreboard players reset @a MA_BPI
 execute at @a[scores={MA_BBI=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:blue_ice"},Age:0s},distance=..10] run function mineall:detect/blue_ice
 scoreboard players reset @a MA_BBI
 
+execute at @a[scores={MA_BGS=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:glowstone_dust"},Age:0s},distance=..10] run function mineall:detect/glowstone
+execute at @a[scores={MA_BGS=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:glowstone"},Age:0s},distance=..10] run function mineall:detect/glowstone
+scoreboard players reset @a MA_BGS
+
+execute at @a[scores={MA_BOB=1,MA_UPA=1,MA_SNEAK=0}] at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:obsidian"},Age:0s},distance=..10] run function mineall:detect/obsidian
+scoreboard players reset @a MA_BOB
+
 scoreboard players set @a MA_SILK 0
 scoreboard players set @a MA_FORTUNE 0
 scoreboard players reset @a MA_UPA

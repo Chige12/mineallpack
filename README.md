@@ -3,6 +3,8 @@ mineall datapack (based on TreeCaptator datapack)
 
 [MineAll](http://forum.minecraftuser.jp/viewtopic.php?f=13&t=6874)Modの機能を[TreeCapitator](https://www.planetminecraft.com/project/treecapitator-datapack-1-13/)を参考に再現したデータパックです。
 
+シルクタッチおよび幸福のエンチャントにも対応しています。
+
 ## 対応ブロック
 * 石炭鉱石
 * 鉄鉱石
@@ -15,6 +17,8 @@ mineall datapack (based on TreeCaptator datapack)
 * 氷
 * 氷塊
 * 青氷
+* グロウストーン
+* 黒曜石
 
 ## インストール方法
 1. このページ右上の「Clone or Download」から「Download ZIP」でZIPファイルをダウンロード

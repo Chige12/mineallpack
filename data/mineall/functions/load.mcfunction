@@ -9,6 +9,8 @@ scoreboard objectives add MA_BRO minecraft.mined:minecraft.redstone_ore
 scoreboard objectives add MA_BI minecraft.mined:minecraft.ice
 scoreboard objectives add MA_BPI minecraft.mined:minecraft.packed_ice
 scoreboard objectives add MA_BBI minecraft.mined:minecraft.blue_ice
+scoreboard objectives add MA_BGS minecraft.mined:minecraft.glowstone
+scoreboard objectives add MA_BOB minecraft.mined:minecraft.obsidian
 
 scoreboard objectives add MA_UWPA minecraft.used:minecraft.wooden_pickaxe
 scoreboard objectives add MA_USPA minecraft.used:minecraft.stone_pickaxe
