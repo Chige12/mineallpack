@@ -22,12 +22,18 @@ scoreboard objectives remove MA_SNEAK
 
 scoreboard objectives remove MA_SILK
 scoreboard objectives remove MA_FORTUNE
+scoreboard objectives remove MA_UNBREAKING
 
 scoreboard objectives remove MA_RANDOM_MIN
 scoreboard objectives remove MA_RANDOM_MAX
 scoreboard objectives remove MA_RANDOM
 
 scoreboard objectives remove MA_BASE_COUNT
+
+#remaining durability
+scoreboard objectives remove MA_REMAIN_DUR
+
+scoreboard objectives remove MA_STOP_MINING
 
 scoreboard objectives remove MA_UPA
 

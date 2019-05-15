@@ -22,12 +22,18 @@ scoreboard objectives add MA_SNEAK minecraft.custom:minecraft.sneak_time
 
 scoreboard objectives add MA_SILK dummy
 scoreboard objectives add MA_FORTUNE dummy
+scoreboard objectives add MA_UNBREAKING dummy
 
 scoreboard objectives add MA_RANDOM_MIN dummy
 scoreboard objectives add MA_RANDOM_MAX dummy
 scoreboard objectives add MA_RANDOM dummy
 
 scoreboard objectives add MA_BASE_COUNT dummy
+
+#remaining durability
+scoreboard objectives add MA_REMAIN_DUR dummy
+
+scoreboard objectives add MA_STOP_MINING dummy
 
 scoreboard objectives add MA_UPA dummy
 

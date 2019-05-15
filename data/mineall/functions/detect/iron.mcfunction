@@ -11,13 +11,15 @@ execute if block ~ ~ ~ minecraft:iron_ore run summon minecraft:item ~ ~ ~ {Item:
 # gather drop item
 execute if block ~ ~ ~ minecraft:iron_ore as @e[type=area_effect_cloud,limit=1,sort=nearest,tag=MA_Gather] run teleport @e[type=item,tag=MA_DropItem,limit=1,sort=nearest,distance=..1] @s
 
+execute if block ~ ~ ~ minecraft:iron_ore if score @s MA_Durability matches 1..2 run function mineall:durability_loss
+
 # imitate block destroy
 execute if block ~ ~ ~ minecraft:iron_ore run playsound block.stone.break block @s
 execute if block ~ ~ ~ minecraft:iron_ore run setblock ~ ~ ~ air replace
 
-execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron
-execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron
-execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron
-execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:iron_ore if score @s MA_DestoryUnder matches 1.. run function mineall:detect/iron
-execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron
-execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~1 ~ ~ if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~ ~1 ~ if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:iron_ore if score @s MA_DestoryUnder matches 1.. run function mineall:detect/iron
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~ ~ ~1 if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:iron_ore run function mineall:detect/iron

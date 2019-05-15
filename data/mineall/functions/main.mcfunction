@@ -1,3 +1,5 @@
+scoreboard players set @a MA_STOP_MINING 0
+
 scoreboard players set @a[scores={MA_SNEAK=0,MA_wooden_paxe=1,MA_UWPA=1}] MA_UPA 1
 scoreboard players set @a[scores={MA_SNEAK=0,MA_stone_paxe=1,MA_USPA=1}] MA_UPA 1
 scoreboard players set @a[scores={MA_SNEAK=0,MA_iron_paxe=1,MA_UIPA=1}] MA_UPA 1
@@ -15,6 +17,18 @@ scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments
 scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:fortune",lvl:1s}]}}}] MA_FORTUNE 1
 scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:fortune",lvl:2s}]}}}] MA_FORTUNE 2
 scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:fortune",lvl:3s}]}}}] MA_FORTUNE 3
+scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:1s}]}}}] MA_UNBREAKING 1
+scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:2s}]}}}] MA_UNBREAKING 2
+scoreboard players set @a[scores={MA_UPA=1},nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:3s}]}}}] MA_UNBREAKING 3
+
+# Get remaining durability
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2}] store result score @s MA_REMAIN_DUR run data get entity @s SelectedItem.tag.Damage -1
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:wooden_pickaxe"}}] run scoreboard players add @s MA_REMAIN_DUR 59
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:stone_pickaxe"}}] run scoreboard players add @s MA_REMAIN_DUR 131
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:iron_pickaxe"}}] run scoreboard players add @s MA_REMAIN_DUR 250
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:golden_pickaxe"}}] run scoreboard players add @s MA_REMAIN_DUR 32
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}}] run scoreboard players add @s MA_REMAIN_DUR 1561
+#execute as @a[scores={MA_UPA=1}] run tellraw @s [{"text":"MA_Durability: "},{"score":{"name":"*","objective":"MA_Durability"}},{"text":", MA_UNBREAKING: "},{"score":{"name":"*","objective":"MA_UNBREAKING"}},{"text":", MA_REMAIN_DUR: "},{"score":{"name":"*","objective":"MA_REMAIN_DUR"}}]
 
 execute as @a[scores={MineAllPack=1..}] at @s run function mineall:option/main
 
@@ -64,7 +78,19 @@ scoreboard players reset @a MA_BGS
 execute as @a[scores={MA_obsidian=1,MA_BOB=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:obsidian"},Age:0s},distance=..10] run function mineall:detect/obsidian
 scoreboard players reset @a MA_BOB
 
+# Apply durability loss
+execute as @a[scores={MA_UPA=1,MA_Durability=1,MA_REMAIN_DUR=..0}] run scoreboard players set @s MA_REMAIN_DUR 0
+#execute as @a[scores={MA_UPA=1}] run tellraw @s [{"text":"MA_Durability: "},{"score":{"name":"*","objective":"MA_Durability"}},{"text":", MA_UNBREAKING: "},{"score":{"name":"*","objective":"MA_UNBREAKING"}},{"text":", MA_REMAIN_DUR: "},{"score":{"name":"*","objective":"MA_REMAIN_DUR"}}]
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:wooden_pickaxe"}}] run scoreboard players remove @s MA_REMAIN_DUR 59
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:stone_pickaxe"}}] run scoreboard players remove @s MA_REMAIN_DUR 131
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:iron_pickaxe"}}] run scoreboard players remove @s MA_REMAIN_DUR 250
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:golden_pickaxe"}}] run scoreboard players remove @s MA_REMAIN_DUR 32
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2},nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}}] run scoreboard players remove @s MA_REMAIN_DUR 1561
+execute as @a[scores={MA_UPA=1,MA_Durability=1..2}] store result entity @s SelectedItem.tag.Damage int -1 run scoreboard players get @s MA_REMAIN_DUR
+#execute as @a[scores={MA_UPA=1}] run tellraw @s [{"text":"MA_Durability: "},{"score":{"name":"*","objective":"MA_Durability"}},{"text":", MA_UNBREAKING: "},{"score":{"name":"*","objective":"MA_UNBREAKING"}},{"text":", MA_REMAIN_DUR: "},{"score":{"name":"*","objective":"MA_REMAIN_DUR"}}]
+
 scoreboard players set @a MA_SILK 0
 scoreboard players set @a MA_FORTUNE 0
+scoreboard players set @a MA_UNBREAKING 0
 scoreboard players reset @a MA_UPA
 scoreboard players set @a MA_SNEAK 0

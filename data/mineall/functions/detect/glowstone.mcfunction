@@ -22,13 +22,15 @@ execute if block ~ ~ ~ minecraft:glowstone as @s[scores={MA_SILK=0,MA_RANDOM=2..
 # gather drop item
 execute if block ~ ~ ~ minecraft:glowstone as @e[type=area_effect_cloud,limit=1,sort=nearest,tag=MA_Gather] run teleport @e[type=item,tag=MA_DropItem,limit=1,sort=nearest,distance=..1] @s
 
+execute if block ~ ~ ~ minecraft:glowstone if score @s MA_Durability matches 1..2 run function mineall:durability_loss
+
 # imitate block destroy
 execute if block ~ ~ ~ minecraft:glowstone run playsound block.glass.break block @s
 execute if block ~ ~ ~ minecraft:glowstone run setblock ~ ~ ~ air replace
 
-execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
-execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
-execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
-execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:glowstone if score @s MA_DestoryUnder matches 1.. run function mineall:detect/glowstone
-execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
-execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~1 ~ ~ if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~ ~1 ~ if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:glowstone if score @s MA_DestoryUnder matches 1.. run function mineall:detect/glowstone
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~ ~ ~1 if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
+execute as @s[scores={MA_STOP_MINING=0}] positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
