@@ -1,9 +1,13 @@
 # mineallpack
-mineall datapack (based on TreeCaptator datapack)
-
 [MineAll](http://forum.minecraftuser.jp/viewtopic.php?f=13&t=6874)Modの機能を[TreeCapitator](https://www.planetminecraft.com/project/treecapitator-datapack-1-13/)を参考に再現したデータパックです。
 
 シルクタッチ、幸福、耐久力のエンチャントにも対応しています。
+
+## 対応バージョン
+- 1.13.2
+- 1.14.1
+
+※上記のバージョンで動作確認しています。もしかしたら上記以外のバージョンでも動作するかもしれません。
 
 ## 対応ブロック
 * 石炭鉱石
@@ -23,7 +27,11 @@ mineall datapack (based on TreeCaptator datapack)
 ## インストール方法
 1. [リリースページ](https://github.com/chrom2411/mineallpack/releases)から「mineallpack.zip」をダウンロードし、マイクラのワールドフォルダの中のdatapacksフォルダの中にコピー
 2. ワールドを開き、チャット欄に`[Datapack] MineAllPack has been installed`と表示されたら使用できます。
-（表示されない場合、`/function #minecraft:load`を実行するか、リソースパックの設定を変更してみると改善されます。）
+    - 表示されない場合、以下の対処法を試してみてください。
+    1. コマンド`/function #minecraft:load`を実行する
+        - ワールド設定でチートを有効にしていない場合は、「LANに公開」からチートを有効にしてコマンドを実行してください。
+    2. （1.13.2限定）リソースパックの設定を変更してみる
+        - 1.13.2では、リソースパックの設定を変更すると（チート無効でも）`/function #minecraft:load`が実行されるようです。
 
 ## 使用方法
 ツルハシで対応したブロックを破壊すると、破壊したブロックに面したブロックが連鎖して破壊されます（斜めに隣接したブロックは破壊されません）。
@@ -61,3 +69,5 @@ AutoCollectと同時にonにした場合はAutoCollectが優先されます。
 ### 対象ツールの設定
 一括破壊を有効にするツールを設定できます。木/石/鉄/金/ダイヤピッケルのそれぞれについて有効/無効を設定できます。
 
+## バグ報告など
+何かあれば[Issue](https://github.com/chrom2411/mineallpack/issues)まで。
