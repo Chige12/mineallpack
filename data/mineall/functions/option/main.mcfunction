@@ -2,6 +2,10 @@
 execute if score @s MineAllPack matches 1 run function mineall:option/indexpage
 execute if score @s MineAllPack matches 2 run function mineall:option/blockindexpage
 
+# reload/uninstall
+execute if score @s MineAllPack matches 999 run function mineall:load
+execute if score @s MineAllPack matches 666 run function mineall:uninstall
+
 # general configulations
 execute if score @s MineAllPack matches 10000 run function mineall:option/general/autocollect_disable
 execute if score @s MineAllPack matches 10001 run function mineall:option/general/autocollect_enable
