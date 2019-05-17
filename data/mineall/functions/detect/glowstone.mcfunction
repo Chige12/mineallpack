@@ -25,7 +25,7 @@ execute if block ~ ~ ~ minecraft:glowstone as @e[type=area_effect_cloud,limit=1,
 execute if block ~ ~ ~ minecraft:glowstone if score @s MA_Durability matches 1..2 run function mineall:durability_loss
 
 # imitate block destroy
-execute if block ~ ~ ~ minecraft:glowstone run playsound block.glass.break block @s
+execute if block ~ ~ ~ minecraft:glowstone run playsound block.glass.break block @a
 execute if block ~ ~ ~ minecraft:glowstone run setblock ~ ~ ~ air replace
 
 execute as @s[scores={MA_STOP_MINING=0}] positioned ~1 ~ ~ if block ~ ~ ~ minecraft:glowstone run function mineall:detect/glowstone
