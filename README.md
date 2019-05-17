@@ -27,7 +27,7 @@
 ## インストール方法
 1. [リリースページ](https://github.com/chrom2411/mineallpack/releases)から「mineallpack.zip」をダウンロードし、マイクラのワールドフォルダの中のdatapacksフォルダの中にコピー
 2. ワールドを開き、チャット欄に`[Datapack] MineAllPack has been installed`と表示されたら使用できます。
-    - 表示されない場合、コマンド`/trigger MineAllPack set 999`を実行してみてください。
+    - 表示されない場合、チャット欄からコマンド`/trigger MineAllPack set 999`を実行してみてください。
 
 ## 使用方法
 ツルハシで対応したブロックを破壊すると、破壊したブロックに面したブロックが連鎖して破壊されます（斜めに隣接したブロックは破壊されません）。
