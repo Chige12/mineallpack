@@ -48,6 +48,7 @@ execute as @a[scores={MA_gold_ore=1,MA_BGO=1,MA_UPA=1}] at @s at @e[type=item,li
 execute as @a[scores={MA_gold_ore=1,MA_BGO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gold_ore"},Age:0s},distance=..10] run function mineall:detect/gold
 scoreboard players reset @a MA_BGO
 
+execute as @a[scores={MA_iron_ore=1,MA_BIO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:raw_iron"},Age:0s},distance=..10] run function mineall:detect/iron
 execute as @a[scores={MA_iron_ore=1,MA_BIO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:iron_ore"},Age:0s},distance=..10] run function mineall:detect/iron
 scoreboard players reset @a MA_BIO
 
