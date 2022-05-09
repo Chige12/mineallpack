@@ -1,4 +1,5 @@
 scoreboard objectives add MA_BCO minecraft.mined:minecraft.coal_ore
+scoreboard objectives add MA_BCPO minecraft.mined:minecraft.copper_ore
 scoreboard objectives add MA_BDO minecraft.mined:minecraft.diamond_ore
 scoreboard objectives add MA_BEO minecraft.mined:minecraft.emerald_ore
 scoreboard objectives add MA_BGO minecraft.mined:minecraft.gold_ore
@@ -44,6 +45,7 @@ scoreboard objectives add MA_DropGather dummy
 scoreboard objectives add MA_Durability dummy
 
 scoreboard objectives add MA_coal_ore dummy
+scoreboard objectives add MA_copper_ore dummy
 scoreboard objectives add MA_diamond_ore dummy
 scoreboard objectives add MA_emerald_ore dummy
 scoreboard objectives add MA_gold_ore dummy
@@ -70,6 +72,7 @@ execute as @a unless score @s MA_DropGather matches 0.. unless score @s MA_DropG
 execute as @a unless score @s MA_Durability matches 0.. unless score @s MA_Durability matches ..0 run scoreboard players set @s MA_Durability 0
 
 execute as @a unless score @s MA_coal_ore matches 0.. unless score @s MA_coal_ore matches ..0 run scoreboard players set @s MA_coal_ore 1
+execute as @a unless score @s MA_copper_ore matches 0.. unless score @s MA_copper_ore matches ..0 run scoreboard players set @s MA_copper_ore 1
 execute as @a unless score @s MA_diamond_ore matches 0.. unless score @s MA_diamond_ore matches ..0 run scoreboard players set @s MA_diamond_ore 1
 execute as @a unless score @s MA_emerald_ore matches 0.. unless score @s MA_emerald_ore matches ..0 run scoreboard players set @s MA_emerald_ore 1
 execute as @a unless score @s MA_gold_ore matches 0.. unless score @s MA_gold_ore matches ..0 run scoreboard players set @s MA_gold_ore 1

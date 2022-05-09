@@ -36,6 +36,10 @@ execute as @a[scores={MA_coal_ore=1,MA_BCO=1,MA_UPA=1}] at @s at @e[type=item,li
 execute as @a[scores={MA_coal_ore=1,MA_BCO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:coal_ore"},Age:0s},distance=..10] run function mineall:detect/coal
 scoreboard players reset @a MA_BCO
 
+execute as @a[scores={MA_copper_ore=1,MA_BCPO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:raw_copper"},Age:0s},distance=..10] run function mineall:detect/copper
+execute as @a[scores={MA_copper_ore=1,MA_BCPO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:copper_ore"},Age:0s},distance=..10] run function mineall:detect/copper
+scoreboard players reset @a MA_BCPO
+
 execute as @a[scores={MA_diamond_ore=1,MA_BDO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:diamond"},Age:0s},distance=..10] run function mineall:detect/diamond
 execute as @a[scores={MA_diamond_ore=1,MA_BDO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:diamond_ore"},Age:0s},distance=..10] run function mineall:detect/diamond
 scoreboard players reset @a MA_BDO
