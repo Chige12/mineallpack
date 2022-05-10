@@ -28,6 +28,7 @@ scoreboard objectives remove MA_USPA
 scoreboard objectives remove MA_UIPA
 scoreboard objectives remove MA_UGPA
 scoreboard objectives remove MA_UDPA
+scoreboard objectives remove MA_UNPA
 
 scoreboard objectives remove MA_SNEAK
 
@@ -79,6 +80,7 @@ scoreboard objectives remove MA_deepslate_iron_ore
 scoreboard objectives remove MA_deepslate_lapis_ore
 scoreboard objectives remove MA_deepslate_redstone_ore
 
+scoreboard objectives remove MA_netherite_paxe
 scoreboard objectives remove MA_diamond_paxe
 scoreboard objectives remove MA_iron_paxe
 scoreboard objectives remove MA_golden_paxe

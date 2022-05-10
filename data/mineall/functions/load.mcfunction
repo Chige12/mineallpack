@@ -28,6 +28,7 @@ scoreboard objectives add MA_USPA minecraft.used:minecraft.stone_pickaxe
 scoreboard objectives add MA_UIPA minecraft.used:minecraft.iron_pickaxe
 scoreboard objectives add MA_UGPA minecraft.used:minecraft.golden_pickaxe
 scoreboard objectives add MA_UDPA minecraft.used:minecraft.diamond_pickaxe
+scoreboard objectives add MA_UNPA minecraft.used:minecraft.netherite_pickaxe
 
 scoreboard objectives add MA_SNEAK minecraft.custom:minecraft.sneak_time
 
@@ -79,6 +80,7 @@ scoreboard objectives add MA_deepslate_iron_ore dummy
 scoreboard objectives add MA_deepslate_lapis_ore dummy
 scoreboard objectives add MA_deepslate_redstone_ore dummy
 
+scoreboard objectives add MA_netherite_paxe dummy
 scoreboard objectives add MA_diamond_paxe dummy
 scoreboard objectives add MA_iron_paxe dummy
 scoreboard objectives add MA_golden_paxe dummy
@@ -116,6 +118,7 @@ execute as @a unless score @s MA_deepslate_iron_ore matches 0.. unless score @s 
 execute as @a unless score @s MA_deepslate_lapis_ore matches 0.. unless score @s MA_deepslate_lapis_ore matches ..0 run scoreboard players set @s MA_deepslate_lapis_ore 1
 execute as @a unless score @s MA_deepslate_redstone_ore matches 0.. unless score @s MA_deepslate_redstone_ore matches ..0 run scoreboard players set @s MA_deepslate_redstone_ore 1
 
+execute as @a unless score @s MA_netherite_paxe matches 0.. unless score @s MA_netherite_paxe matches ..0 run scoreboard players set @s MA_netherite_paxe 1
 execute as @a unless score @s MA_diamond_paxe matches 0.. unless score @s MA_diamond_paxe matches ..0 run scoreboard players set @s MA_diamond_paxe 1
 execute as @a unless score @s MA_iron_paxe matches 0.. unless score @s MA_iron_paxe matches ..0 run scoreboard players set @s MA_iron_paxe 1
 execute as @a unless score @s MA_golden_paxe matches 0.. unless score @s MA_golden_paxe matches ..0 run scoreboard players set @s MA_golden_paxe 1

@@ -65,19 +65,22 @@ execute if score @s MineAllPack matches 11140 run function mineall:option/block/
 execute if score @s MineAllPack matches 11141 run function mineall:option/block/obsidian_enable
 
 # tool configulations
-execute if score @s MineAllPack matches 12000 run function mineall:option/tool/diamond_pickaxe_disable
-execute if score @s MineAllPack matches 12001 run function mineall:option/tool/diamond_pickaxe_enable
+execute if score @s MineAllPack matches 12000 run function mineall:option/tool/netherite_pickaxe_disable
+execute if score @s MineAllPack matches 12001 run function mineall:option/tool/netherite_pickaxe_enable
 
-execute if score @s MineAllPack matches 12010 run function mineall:option/tool/iron_pickaxe_disable
-execute if score @s MineAllPack matches 12011 run function mineall:option/tool/iron_pickaxe_enable
+execute if score @s MineAllPack matches 12010 run function mineall:option/tool/diamond_pickaxe_disable
+execute if score @s MineAllPack matches 12011 run function mineall:option/tool/diamond_pickaxe_enable
 
-execute if score @s MineAllPack matches 12020 run function mineall:option/tool/golden_pickaxe_disable
-execute if score @s MineAllPack matches 12021 run function mineall:option/tool/golden_pickaxe_enable
+execute if score @s MineAllPack matches 12020 run function mineall:option/tool/iron_pickaxe_disable
+execute if score @s MineAllPack matches 12021 run function mineall:option/tool/iron_pickaxe_enable
 
-execute if score @s MineAllPack matches 12030 run function mineall:option/tool/stone_pickaxe_disable
-execute if score @s MineAllPack matches 12031 run function mineall:option/tool/stone_pickaxe_enable
+execute if score @s MineAllPack matches 12030 run function mineall:option/tool/golden_pickaxe_disable
+execute if score @s MineAllPack matches 12031 run function mineall:option/tool/golden_pickaxe_enable
 
-execute if score @s MineAllPack matches 12040 run function mineall:option/tool/wooden_pickaxe_disable
-execute if score @s MineAllPack matches 12041 run function mineall:option/tool/wooden_pickaxe_enable
+execute if score @s MineAllPack matches 12040 run function mineall:option/tool/stone_pickaxe_disable
+execute if score @s MineAllPack matches 12041 run function mineall:option/tool/stone_pickaxe_enable
+
+execute if score @s MineAllPack matches 12050 run function mineall:option/tool/wooden_pickaxe_disable
+execute if score @s MineAllPack matches 12051 run function mineall:option/tool/wooden_pickaxe_enable
 
 scoreboard players set @s MineAllPack 0
