@@ -13,6 +13,15 @@ scoreboard objectives remove MA_BBI
 scoreboard objectives remove MA_BGS
 scoreboard objectives remove MA_BOB
 
+scoreboard objectives remove MA_BDCO
+scoreboard objectives remove MA_BDCPO
+scoreboard objectives remove MA_BDDO
+scoreboard objectives remove MA_BDEO
+scoreboard objectives remove MA_BDGO
+scoreboard objectives remove MA_BDIO
+scoreboard objectives remove MA_BDLO
+scoreboard objectives remove MA_BDRO
+
 scoreboard objectives remove MA_UWPA
 scoreboard objectives remove MA_USPA
 scoreboard objectives remove MA_UIPA
@@ -58,6 +67,15 @@ scoreboard objectives remove MA_packed_ice
 scoreboard objectives remove MA_blue_ice
 scoreboard objectives remove MA_glowstone
 scoreboard objectives remove MA_obsidian
+
+scoreboard objectives remove MA_deepslate_coal_ore
+scoreboard objectives remove MA_deepslate_copper_ore
+scoreboard objectives remove MA_deepslate_diamond_ore
+scoreboard objectives remove MA_deepslate_emerald_ore
+scoreboard objectives remove MA_deepslate_gold_ore
+scoreboard objectives remove MA_deepslate_iron_ore
+scoreboard objectives remove MA_deepslate_lapis_ore
+scoreboard objectives remove MA_deepslate_redstone_ore
 
 scoreboard objectives remove MA_diamond_paxe
 scoreboard objectives remove MA_iron_paxe
