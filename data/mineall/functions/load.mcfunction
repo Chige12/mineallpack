@@ -3,6 +3,7 @@ scoreboard objectives add MA_BCPO minecraft.mined:minecraft.copper_ore
 scoreboard objectives add MA_BDO minecraft.mined:minecraft.diamond_ore
 scoreboard objectives add MA_BEO minecraft.mined:minecraft.emerald_ore
 scoreboard objectives add MA_BGO minecraft.mined:minecraft.gold_ore
+scoreboard objectives add MA_BNGO minecraft.mined:minecraft.nether_gold_ore
 scoreboard objectives add MA_BIO minecraft.mined:minecraft.iron_ore
 scoreboard objectives add MA_BLO minecraft.mined:minecraft.lapis_ore
 scoreboard objectives add MA_BQO minecraft.mined:minecraft.nether_quartz_ore
@@ -58,6 +59,7 @@ scoreboard objectives add MA_copper_ore dummy
 scoreboard objectives add MA_diamond_ore dummy
 scoreboard objectives add MA_emerald_ore dummy
 scoreboard objectives add MA_gold_ore dummy
+scoreboard objectives add MA_nether_gold_ore dummy
 scoreboard objectives add MA_iron_ore dummy
 scoreboard objectives add MA_lapis_ore dummy
 scoreboard objectives add MA_quartz_ore dummy
@@ -94,6 +96,7 @@ execute as @a unless score @s MA_copper_ore matches 0.. unless score @s MA_coppe
 execute as @a unless score @s MA_diamond_ore matches 0.. unless score @s MA_diamond_ore matches ..0 run scoreboard players set @s MA_diamond_ore 1
 execute as @a unless score @s MA_emerald_ore matches 0.. unless score @s MA_emerald_ore matches ..0 run scoreboard players set @s MA_emerald_ore 1
 execute as @a unless score @s MA_gold_ore matches 0.. unless score @s MA_gold_ore matches ..0 run scoreboard players set @s MA_gold_ore 1
+execute as @a unless score @s MA_nether_gold_ore matches 0.. unless score @s MA_nether_gold_ore matches ..0 run scoreboard players set @s MA_nether_gold_ore 1
 execute as @a unless score @s MA_iron_ore matches 0.. unless score @s MA_iron_ore matches ..0 run scoreboard players set @s MA_iron_ore 1
 execute as @a unless score @s MA_lapis_ore matches 0.. unless score @s MA_lapis_ore matches ..0 run scoreboard players set @s MA_lapis_ore 1
 execute as @a unless score @s MA_quartz_ore matches 0.. unless score @s MA_quartz_ore matches ..0 run scoreboard players set @s MA_quartz_ore 1

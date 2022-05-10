@@ -3,6 +3,7 @@ scoreboard objectives remove MA_BCPO
 scoreboard objectives remove MA_BDO
 scoreboard objectives remove MA_BEO
 scoreboard objectives remove MA_BGO
+scoreboard objectives remove MA_BNGO
 scoreboard objectives remove MA_BIO
 scoreboard objectives remove MA_BLO
 scoreboard objectives remove MA_BQO
@@ -58,6 +59,7 @@ scoreboard objectives remove MA_copper_ore
 scoreboard objectives remove MA_diamond_ore
 scoreboard objectives remove MA_emerald_ore
 scoreboard objectives remove MA_gold_ore
+scoreboard objectives remove MA_nether_gold_ore
 scoreboard objectives remove MA_iron_ore
 scoreboard objectives remove MA_lapis_ore
 scoreboard objectives remove MA_quartz_ore
