@@ -64,6 +64,9 @@ execute if score @s MineAllPack matches 11131 run function mineall:option/block/
 execute if score @s MineAllPack matches 11140 run function mineall:option/block/obsidian_disable
 execute if score @s MineAllPack matches 11141 run function mineall:option/block/obsidian_enable
 
+execute if score @s MineAllPack matches 11150 run function mineall:option/block/amethyst_block_disable
+execute if score @s MineAllPack matches 11151 run function mineall:option/block/amethyst_block_enable
+
 # tool configulations
 execute if score @s MineAllPack matches 12000 run function mineall:option/tool/netherite_pickaxe_disable
 execute if score @s MineAllPack matches 12001 run function mineall:option/tool/netherite_pickaxe_enable

@@ -13,6 +13,7 @@ scoreboard objectives remove MA_BPI
 scoreboard objectives remove MA_BBI
 scoreboard objectives remove MA_BGS
 scoreboard objectives remove MA_BOB
+scoreboard objectives remove MA_BAB
 
 scoreboard objectives remove MA_BDCO
 scoreboard objectives remove MA_BDCPO
@@ -70,6 +71,7 @@ scoreboard objectives remove MA_packed_ice
 scoreboard objectives remove MA_blue_ice
 scoreboard objectives remove MA_glowstone
 scoreboard objectives remove MA_obsidian
+scoreboard objectives remove MA_amethyst_block
 
 scoreboard objectives remove MA_deepslate_coal_ore
 scoreboard objectives remove MA_deepslate_copper_ore

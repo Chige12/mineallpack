@@ -13,6 +13,7 @@ scoreboard objectives add MA_BPI minecraft.mined:minecraft.packed_ice
 scoreboard objectives add MA_BBI minecraft.mined:minecraft.blue_ice
 scoreboard objectives add MA_BGS minecraft.mined:minecraft.glowstone
 scoreboard objectives add MA_BOB minecraft.mined:minecraft.obsidian
+scoreboard objectives add MA_BAB minecraft.mined:minecraft.amethyst_block
 
 scoreboard objectives add MA_BDCO minecraft.mined:minecraft.deepslate_coal_ore
 scoreboard objectives add MA_BDCPO minecraft.mined:minecraft.deepslate_copper_ore
@@ -70,6 +71,7 @@ scoreboard objectives add MA_packed_ice dummy
 scoreboard objectives add MA_blue_ice dummy
 scoreboard objectives add MA_glowstone dummy
 scoreboard objectives add MA_obsidian dummy
+scoreboard objectives add MA_amethyst_block dummy
 
 scoreboard objectives add MA_deepslate_coal_ore dummy
 scoreboard objectives add MA_deepslate_copper_ore dummy
@@ -108,6 +110,7 @@ execute as @a unless score @s MA_packed_ice matches 0.. unless score @s MA_packe
 execute as @a unless score @s MA_blue_ice matches 0.. unless score @s MA_blue_ice matches ..0 run scoreboard players set @s MA_blue_ice 1
 execute as @a unless score @s MA_glowstone matches 0.. unless score @s MA_glowstone matches ..0 run scoreboard players set @s MA_glowstone 1
 execute as @a unless score @s MA_obsidian matches 0.. unless score @s MA_obsidian matches ..0 run scoreboard players set @s MA_obsidian 1
+execute as @a unless score @s MA_amethyst_block matches 0.. unless score @s MA_amethyst_block matches ..0 run scoreboard players set @s MA_amethyst_block 1
 
 execute as @a unless score @s MA_deepslate_coal_ore matches 0.. unless score @s MA_deepslate_coal_ore matches ..0 run scoreboard players set @s MA_deepslate_coal_ore 1
 execute as @a unless score @s MA_deepslate_copper_ore matches 0.. unless score @s MA_deepslate_copper_ore matches ..0 run scoreboard players set @s MA_deepslate_copper_ore 1
