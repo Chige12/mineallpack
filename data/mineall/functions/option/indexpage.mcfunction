@@ -19,22 +19,24 @@ tellraw @s {"text":"[一括破壊の対象ブロック設定]","color":"aqua","c
 
 tellraw @s {"text":""}
 tellraw @s {"text":"一括破壊の対象ツール:","color":"yellow"}
-execute if score @s MA_diamond_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12000"}},{"text":"diamond_pickaxe - ダイヤピッケル"}]
-execute unless score @s MA_diamond_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12001"}},{"text":"diamond_pickaxe - ダイヤピッケル"}]
+execute if score @s MA_netherite_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12000"}},{"text":"netherite_pickaxe - ネザライトピッケル"}]
+execute unless score @s MA_netherite_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12001"}},{"text":"netherite_pickaxe - ネザライトピッケル"}]
 
-execute if score @s MA_iron_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12010"}},{"text":"iron_pickaxe - 鉄ピッケル"}]
-execute unless score @s MA_iron_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12011"}},{"text":"iron_pickaxe - 鉄ピッケル"}]
+execute if score @s MA_diamond_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12010"}},{"text":"diamond_pickaxe - ダイヤピッケル"}]
+execute unless score @s MA_diamond_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12011"}},{"text":"diamond_pickaxe - ダイヤピッケル"}]
 
-execute if score @s MA_golden_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12020"}},{"text":"golden_pickaxe - 金ピッケル"}]
-execute unless score @s MA_golden_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12021"}},{"text":"golden_pickaxe - 金ピッケル"}]
+execute if score @s MA_iron_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12020"}},{"text":"iron_pickaxe - 鉄ピッケル"}]
+execute unless score @s MA_iron_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12021"}},{"text":"iron_pickaxe - 鉄ピッケル"}]
 
-execute if score @s MA_stone_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12030"}},{"text":"stone_pickaxe - 石ピッケル"}]
-execute unless score @s MA_stone_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12031"}},{"text":"stone_pickaxe - 石ピッケル"}]
+execute if score @s MA_golden_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12030"}},{"text":"golden_pickaxe - 金ピッケル"}]
+execute unless score @s MA_golden_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12031"}},{"text":"golden_pickaxe - 金ピッケル"}]
 
-execute if score @s MA_wooden_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12040"}},{"text":"wooden_pickaxe - 木ピッケル"}]
-execute unless score @s MA_wooden_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12041"}},{"text":"wooden_pickaxe - 木ピッケル"}]
+execute if score @s MA_stone_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12040"}},{"text":"stone_pickaxe - 石ピッケル"}]
+execute unless score @s MA_stone_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12041"}},{"text":"stone_pickaxe - 石ピッケル"}]
 
-tellraw @s {"text":""}
+execute if score @s MA_wooden_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12050"}},{"text":"wooden_pickaxe - 木ピッケル"}]
+execute unless score @s MA_wooden_paxe matches 1.. run tellraw @s [{"text":"        "},{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 12051"}},{"text":"wooden_pickaxe - 木ピッケル"}]
+
 tellraw @s {"text":""}
 tellraw @s {"text":""}
 tellraw @s {"text":"                                                                                ","strikethrough":true}

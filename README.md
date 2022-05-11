@@ -1,31 +1,34 @@
-# mineallpack
-[MineAll](http://forum.minecraftuser.jp/viewtopic.php?f=13&t=6874)Modの機能を[TreeCapitator](https://www.planetminecraft.com/project/treecapitator-datapack-1-13/)を参考に再現したデータパックです。
+# mineallpack 1.18
+[MineAll](http://forum.minecraftuser.jp/viewtopic.php?f=13&t=6874)Modの機能を[TreeCapitator](https://www.planetminecraft.com/project/treecapitator-datapack-1-13/)を参考に再現したデータパック **mineallpack** を 1.18 用にアップデートしたものです。
 
 シルクタッチ、幸福、耐久力のエンチャントにも対応しています。
 
 ## 対応バージョン
-- 1.13.2
-- 1.14.1
+- 1.18.2
 
 ※上記のバージョンで動作確認しています。もしかしたら上記以外のバージョンでも動作するかもしれません。
+※1.13.2 または、1.14.1 で利用したい場合は[過去のバージョン](https://github.com/chrom2411/mineallpack/releases/tag/1.0.1)からダウンロードしてください。
 
 ## 対応ブロック
-* 石炭鉱石
-* 鉄鉱石
-* ラピスラズリ鉱石
-* 金鉱石
-* レッドストーン鉱石
-* ダイヤモンド鉱石
-* エメラルド鉱石
+* 石炭鉱石 / 深層石炭鉱石
+* 銅鉱石 / 深層銅鉱石
+* 鉄鉱石 / 深層鉄鉱石
+* ラピスラズリ鉱石 / 深層ラピスラズリ鉱石
+* 金鉱石 / 深層金鉱石
+* レッドストーン鉱石 / 深層レッドストーン鉱石
+* ダイヤモンド鉱石 / 深層ダイヤモンド鉱石
+* エメラルド鉱石 / 深層エメラルド鉱石
 * ネザークォーツ鉱石
+* ネザー金鉱石
 * 氷
 * 氷塊
 * 青氷
 * グロウストーン
 * 黒曜石
+* アメジストブロック
 
 ## インストール方法
-1. [リリースページ](https://github.com/chrom2411/mineallpack/releases)から「mineallpack.zip」をダウンロードし、マイクラのワールドフォルダの中のdatapacksフォルダの中にコピー
+1. [リリースページ](https://github.com/Chige12/mineallpack/releases)から「mineallpack.zip」をダウンロードし、マイクラのワールドフォルダの中のdatapacksフォルダの中にコピー
 2. ワールドを開き、チャット欄に`[Datapack] MineAllPack has been installed`と表示されたら使用できます。
     - 表示されない場合、チャット欄からコマンド`/trigger MineAllPack set 999`を実行してみてください。
 
@@ -63,7 +66,7 @@ AutoCollectと同時にonにした場合はAutoCollectが優先されます。
 （注：表示の都合上、この設定だけ別ページに分けてあります。`[一括破壊の対象ブロック設定]`をクリックしてページを切り替えて設定してください）
 
 ### 対象ツールの設定
-一括破壊を有効にするツールを設定できます。木/石/鉄/金/ダイヤピッケルのそれぞれについて有効/無効を設定できます。
+一括破壊を有効にするツールを設定できます。木/石/鉄/金/ダイヤ/ネザライトピッケルのそれぞれについて有効/無効を設定できます。
 
 ## バグ報告など
 何かあれば[Issue](https://github.com/chrom2411/mineallpack/issues)まで。
