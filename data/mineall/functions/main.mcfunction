@@ -91,6 +91,9 @@ scoreboard players reset @a MA_BGS
 execute as @a[scores={MA_obsidian=1,MA_BOB=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:obsidian"},Age:0s},distance=..10] run function mineall:detect/obsidian
 scoreboard players reset @a MA_BOB
 
+execute as @a[scores={MA_amethyst_block=1,MA_BAB=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:amethyst_block"},Age:0s},distance=..10] run function mineall:detect/amethyst_block
+scoreboard players reset @a MA_BAB
+
 # deepslate
 execute as @a[scores={MA_deepslate_coal_ore=1,MA_BDCO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:coal"},Age:0s},distance=..10] run function mineall:detect/deepslate_coal
 execute as @a[scores={MA_deepslate_coal_ore=1,MA_BDCO=1,MA_UPA=1}] at @s at @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:deepslate_coal_ore"},Age:0s},distance=..10] run function mineall:detect/deepslate_coal

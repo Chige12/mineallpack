@@ -2,7 +2,6 @@ tellraw @s {"text":""}
 tellraw @s {"text":""}
 tellraw @s [{"text":"                     ","strikethrough":true},{"text":" MineAllPack Settings ","color":"gold","strikethrough":false,"bold":true},{"text":"                      ","strikethrough":true}]
 tellraw @s [{"text":"                     ","strikethrough":true},{"text":" 一括破壊の対象ブロック設定 ","color":"gold","strikethrough":false,"bold":true},{"text":"                      ","strikethrough":true}]
-tellraw @s {"text":""}
 
 execute if score @s MA_coal_ore matches 1.. run tellraw @s ["",{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 11000"}},{"text":"coal_ore - 石炭鉱石"}]
 execute unless score @s MA_coal_ore matches 1.. run tellraw @s ["",{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 11001"}},{"text":"coal_ore - 石炭鉱石"}]
@@ -48,6 +47,9 @@ execute unless score @s MA_glowstone matches 1.. run tellraw @s ["",{"text":"[of
 
 execute if score @s MA_obsidian matches 1.. run tellraw @s ["",{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 11140"}},{"text":"obsidian - 黒曜石"}]
 execute unless score @s MA_obsidian matches 1.. run tellraw @s ["",{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 11141"}},{"text":"obsidian - 黒曜石"}]
+
+execute if score @s MA_amethyst_block matches 1.. run tellraw @s ["",{"text":"[on ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 11150"}},{"text":"amethyst_block - アメジストブロック"}]
+execute unless score @s MA_amethyst_block matches 1.. run tellraw @s ["",{"text":"[off] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 11151"}},{"text":"amethyst_block - アメジストブロック"}]
 
 tellraw @s {"text":""}
 tellraw @s [{"text":"[戻る] ","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MineAllPack set 1"}},{"text":"                                                                         ","color":"white","strikethrough":true}]
